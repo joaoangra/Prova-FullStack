@@ -14,4 +14,4 @@ O DER representa a estrutura do banco de dados, mostrando as entidades (usuário
 
 ![Diagrama ER](techman_erd_final.png)
 
-Esses diagramas foram utilizados para o planejamento e desenvolvimento do sistema, garantindo uma arquitetura clara e eficiente.
+Esses diagramas foram utilizados para o planejamento e desenvolvimento do sistema, garantindo uma arquitetura clara e eficiente
