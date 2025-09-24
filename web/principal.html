@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techman - Equipamentos</title>
+  <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+  <header class="header">
+    <img src="/web/img/techman.png" alt="Techman Logo" class="logo">
+    <nav>
+      <button id="novoEquipamentoBtn" class="header-btn">Novo equipamento</button>
+      <button id="logoutBtn" class="header-btn"><img src="/web/img/logout_sair.png" alt=""></button>
+    </nav>
+  </header>
+  <main>
+    <div id="equipamentoList" class="equipamento-list"></div>
+  </main>
+
+  <!-- Modal Comentários -->
+  <div id="comentariosModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeComentarios">&times;</span>
+      <h2>Comentários</h2>
+      <div id="comentariosContainer"></div>
+      <button id="adicionarComentarioBtn" class="modal-btn">Adicionar comentário</button>
+    </div>
+  </div>
+
+  <!-- Modal Novo Comentário -->
+  <div id="novoComentarioModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeNovoComentario">&times;</span>
+      <h2>Cadastro de comentário</h2>
+      <textarea id="novoComentarioTexto" placeholder="Comentário"></textarea>
+      <button id="cadastrarComentarioBtn" class="modal-btn">Cadastrar</button>
+    </div>
+  </div>
+
+  <!-- Modal Novo Equipamento -->
+  <div id="novoEquipamentoModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeNovoEquipamento">&times;</span>
+      <h2>Cadastro de equipamento</h2>
+      <input id="nomeEquipamento" placeholder="Nome">
+  <select id="imagemEquipamento" placeholder="Imagem do equipamento"></select>
+      <textarea id="descricaoEquipamento" placeholder="Descrição"></textarea>
+      <label><input type="checkbox" id="ativoEquipamento" checked> Ativo</label>
+      <button id="cadastrarEquipamentoBtn" class="modal-btn">Cadastrar</button>
+    </div>
+  </div>
+
+  <!-- Modal Excluir Equipamento -->
+  <div id="excluirEquipamentoModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn" id="closeExcluirEquipamento">&times;</span>
+      <h2>Exclusão de equipamento</h2>
+      <p>Atenção! Tem certeza que deseja excluir o equipamento? Essa ação não poderá ser desfeita.</p>
+      <button id="confirmarExcluirBtn" class="modal-btn excluir">Excluir</button>
+    </div>
+  </div>
+
+  <script src="principal.js"></script>
+</body>
+</html>

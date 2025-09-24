@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techman - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="margin:0;min-height:100vh;background:linear-gradient(120deg,#35797d,#44babc);display:flex;align-items:center;justify-content:center;">
+        <div class="login-container">
+            <img src="/web/img/techman.png" alt="Techman Logo">
+            <h2 class="login-title">Digite sua senha</h2>
+            <input type="password" id="senha" maxlength="6" readonly placeholder="******" class="login-input" />
+            <div id="teclado-virtual" class="teclado-virtual">
+                <button class="tecla" data-num="1">1</button>
+                <button class="tecla" data-num="2">2</button>
+                <button class="tecla" data-num="3">3</button>
+                <button class="tecla" data-num="4">4</button>
+                <button class="tecla" data-num="5">5</button>
+                <button class="tecla" data-num="6">6</button>
+                <button class="tecla" data-num="7">7</button>
+                <button class="tecla" data-num="8">8</button>
+                <button class="tecla" data-num="9">9</button>
+                <button id="clearBtn">C</button>
+                <button class="tecla" data-num="0">0</button>
+                <button id="enterBtn" disabled>Entrar</button>
+            </div>
+            <div id="erro"></div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
