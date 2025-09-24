@@ -4,7 +4,6 @@ const prisma = new PrismaClient();
 async function main() {
   console.log('Iniciando seed do banco de dados...');
 
-  // Criar perfis
   const perfis = await Promise.all([
     prisma.perfil.create({ data: { perfil: 'Comum' } }),
     prisma.perfil.create({ data: { perfil: 'Administrador' } }),
@@ -14,7 +13,6 @@ async function main() {
 
   console.log('Perfis criados:', perfis.length);
 
-  // Criar usuários
   const usuarios = await Promise.all([
     prisma.usuario.create({ data: { senha: '111111', perfilId: 1 } }),
     prisma.usuario.create({ data: { senha: '212121', perfilId: 2 } }),
@@ -24,7 +22,6 @@ async function main() {
 
   console.log('Usuários criados:', usuarios.length);
 
-  // Criar equipamentos
   const equipamentos = await Promise.all([
     prisma.equipamento.create({
       data: {
@@ -75,8 +72,7 @@ async function main() {
 
   console.log('Equipamentos criados:', equipamentos.length);
 
-  // Criar comentários (agora usando usuarioId)
-  // usuarios: [1:Comum, 2:Administrador, 3:Gerente, 4:Tecnico]
+
   const comentarios = await Promise.all([
     prisma.comentario.create({
       data: {
