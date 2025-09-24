@@ -9,9 +9,9 @@ O diagrama de atividade ilustra o fluxo de processos do sistema, incluindo login
 
 ![Diagrama de Atividade](atividade_diagrama.png)
 
-### Diagrama Entidade-Relacionamento (DER)
+### Diagrama Entidade-Relacionamento (ER)
 O DER representa a estrutura do banco de dados, mostrando as entidades (usuários, equipamentos, comentários) e seus relacionamentos.
 
-![Diagrama ER](techman_erd_final.png)
+![Diagrama ER](/docs/techman_erd_final.png)
 
 Esses diagramas foram utilizados para o planejamento e desenvolvimento do sistema, garantindo uma arquitetura clara e eficiente
